@@ -30,13 +30,13 @@ body{
 
 .row {
     display: flex;
-    flex: 1 0 100%;
+    /* flex: 1 0 100%; */
     flex-direction: row;
 }
 
 .col {
     display: flex;
-    flex: 1 0 100%;
+    /* flex: 1 0 100%; */
     flex-direction: column
 }
 
@@ -70,11 +70,26 @@ nav{
 }
 
 .header__content{
-    width: 100%;
+    width: 440px;
     height: 210px;
     margin-top: 130px;
     background-color: red;
-    box-sizing: content-box;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header__content h1{
+    font-size: 49px;
+    
+}
+
+.header__content p{
+    font-size: 16px;
+}
+
+.header__content button{
+    height: 70px;
+    font-size: 16px;
 }
 
 .header__bg__img{
@@ -110,6 +125,32 @@ nav{
 }
 
 .stats__element{
+    height: 160px;
     width: 160px;
     background-color: lightcoral;
+}
+                                /* PERKS */
+.perks{
+    width: var(--section-width);
+    height: 1395px;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+
+.perks .elements{
+    width: 70%;
+    height:85%;
+    background-color: var(--color-primary);
+    align-content: space-between;
+}
+
+.perks__object{
+    height: 31%;
+    width: 100%;
+    background-color: var(--color-redish);
+}
+
+.perks .img__size{
+
 }
