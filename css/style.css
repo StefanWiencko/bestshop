@@ -67,6 +67,27 @@ nav{
     width: 1350px;
     height: 70px;
     background-color: azure;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 140px;
+    height: 100%;
+    background-color: var(--color-primary);
+    font-size: 32px;
+    align-items: center;
+}
+
+header .menu{
+    width: 550px;
+    height: 100%;
+}
+
+.menu button{
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
 }
 
 .header__content{
@@ -125,9 +146,22 @@ nav{
 }
 
 .stats__element{
-    height: 160px;
-    width: 160px;
+    height: 155px;
+    width: 134px;
     background-color: lightcoral;
+}
+
+.stats .img{
+    height: 50%;
+}
+
+.stats p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.stats p:last-of-type {
+    font-size: 17px;
 }
                                 /* PERKS */
 .perks{
@@ -157,11 +191,28 @@ nav{
     height: 100%;
     background-color: var(--color-green);
 }
+
+.perks_img1, .perks_img3{
+    order: 1;
+}
+
+.perks  article.col{
+    justify-content: center;
+    width: 30%;
+}
+
+.perks article h3{
+    font-size: 36px;
+    width: 65%;
+}
+
+.perks article h5{
+    font-size: 16px;
+}
                             /* PRICING */
 .pricing{
     width: var(--section-width);
     height: 700px;
-    /* margin-top: 110px; */
     background-color: var(--color-green);
     justify-content: center;
     align-items: center;
@@ -216,4 +267,24 @@ footer{
     height: 100%;
     width: 250px;
     background-color: var(--color-redish);
+    justify-content: center;
+}
+
+footer li:first-of-type{
+    font-size: 26px;
+}
+
+footer:last-of-type{
+    font-size: 11px;
+}
+
+footer .icons{
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-green);
 }
