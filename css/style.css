@@ -313,7 +313,7 @@ header .menu{
     background-color: transparent;
     background-image: url("../assets/Macbook.png");
     background-size: contain;
-    background-position: bottom left;
+    background-position: left center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 3;
@@ -321,14 +321,25 @@ header .menu{
 
 .element1.perks__object::before{
     content: "";
-    width: 189px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     background-color: var(--color-redish);
     border-radius: 41px;
     transform: rotate(45deg);
     z-index: 2;
     right: 0;
+}
+
+.element2.perks__object::before{
+    content: "";
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    z-index: 1;
+    left: 15px;
 }
 
 .perks_img2{
@@ -338,6 +349,7 @@ header .menu{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 2;
 }
 
 .perks_img3.size{
@@ -354,6 +366,7 @@ header .menu{
     width: 60%;
     padding: 30px 35px;
     position: relative;
+    background-color: var(--color-white);
 }
 
 .paragraph_size{
@@ -408,28 +421,51 @@ header .menu{
                             /* PRICING */
 .pricing{
     width: var(--section-width);
-    height: 700px;
-    background-color: var(--color-green);
+    height: 800px;
+    background-color: var(--color-white);
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
-.pricing h2{
+.pricing > h2{
     font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.pricing .element > h3{
+    font-size: 12px;
+    font-family: var(--raleway);
+    font-weight: bold;
 }
 
 .pricing .elements{
     width: 80%;
     height: 80%;
-    background-color: var(--color-redish);
+    background-color: var(--color-white);
     justify-content: space-between;
     align-items: center;
 }
 
 .pricing .element{
     width: 30%;
-    background-color: var(--color-black);
+    background-color: var(--color-white);
     position: relative;
+    padding: 35px;
+    border-radius: 18px;
+}
+
+.pricing .element1{
+    border: 1px solid var(--color-redish);
+}
+
+.pricing .element2{
+    border: 1px solid var(--color-primary);
+}
+
+.pricing .element3{
+    border: 1px solid var(--color-green);
 }
 
 .pricing .element1, .pricing .element3{
@@ -439,15 +475,52 @@ header .menu{
 
 .pricing .element h2{
     font-size: 20px;
+    font-family: var(--raleway);
+    font-weight: bold;
 }
 
 .pricing h1{
     font-size: 46px;
+    font-family: var(--open-sans);
+    font-weight: 300;
+}
+
+.pricing .element1 h1{
+    color: var(--color-redish);
+}
+
+.pricing .element2 h1{
+    color: var(--color-primary);
+}
+
+.pricing .element3 h1{
+    color: var(--color-green);
+}
+
+.pricing ul{
+    text-align: center ;
+    margin-bottom: 30px;
 }
 
 .pricing li {
-    line-height: 25px;
     font-size: 14px;
+    list-style: none;
+    padding: 10px;
+    font-family: var(--open-sans);
+    font-weight: 400;
+    position: relative;
+}
+
+.pricing li::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-image: url("../assets/Checkmark.svg");
+    top: 30%;
+    left: -10%;
+    border-radius: 2px;
+    border: 1px solid var(--color-green);
 }
 
 .pricing button{
