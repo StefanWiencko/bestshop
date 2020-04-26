@@ -227,16 +227,42 @@ header .menu{
     height: 80%;
     background-color: var(--color-redish);
     justify-content: space-between;
+    align-items: center;
 }
 
 .pricing .element{
     width: 30%;
     background-color: var(--color-black);
+    position: relative;
 }
 
+.pricing .element1, .pricing .element3{
+   width: 25%;
+   height: 90%; 
+}
+
+.pricing .element h2{
+    font-size: 20px;
+}
+
+.pricing h1{
+    font-size: 46px;
+}
+
+.pricing li {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.pricing button{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+}
                     /* CONTACT */
 .contact{
-    height: 750px;
+    height: 550px;
     width: var(--section-width);
     background-color: var(--color-grey);
     justify-content: center;
@@ -249,11 +275,40 @@ header .menu{
     background-color: var(--color-redish);
 }
 
+.contact form{
+    height: 100%;
+}
+
+.contact .input{
+    height: 40%;
+}
+
+.contact .input input{
+    height: 30%;
+}
+
 .contact .element{
     width: 50%;
     background-color: var(--color-green);
 }
 
+.contact h1{
+    font-size: 49px;
+}
+
+.contact h3{
+    font-size: 16px;
+}
+
+.contact .consent label{
+    font-size: 12px;
+}
+
+.contact button{
+    width: 230px;
+    height: 70px;
+    align-self: flex-end;
+}
                     /* FOOTER */
 footer{
     width: var(--section-width);
@@ -267,7 +322,8 @@ footer{
     height: 100%;
     width: 250px;
     background-color: var(--color-redish);
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer li:first-of-type{
